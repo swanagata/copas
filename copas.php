@@ -12,25 +12,14 @@
 /**
  * Enqueue the necessary JavaScript files for the Copas plugin.
  *
- * This function includes the following scripts:
- * - The self-hosted clipboard.js library.
- * - The main script.js file for the Copas plugin.
+ * This function includes the main script.js file for the Copas plugin.
  */
 function copas_enqueue_scripts() {
-    // Add the self-hosted clipboard.js library
-    wp_enqueue_script(
-        'clipboard-js',
-        plugin_dir_url(__FILE__) . 'js/clipboardjs/clipboard.min.js',
-        array(), // No dependencies
-        '2.0.11', // Script version
-        true // Load this script in the footer
-    );
-
     // Add the main script.js file for the Copas plugin
     wp_enqueue_script(
         'copas',
         plugin_dir_url(__FILE__) . 'js/script.js',
-        array('clipboard-js'), // This script depends on clipboard.js
+        array(), // No dependencies
         '1.0', // Script version
         true // Load this script in the footer
     );
@@ -68,7 +57,8 @@ function add_copas_button($atts) {
     );
 
     return '
-        <button class="' . esc_attr($atts['classtext']) . ' copy-btn" data-clipboard-text="' . esc_attr($atts['content']) . '" data-success-message="' . esc_attr($atts['successmessage']) . '">' . esc_html($atts['buttontext']) . '</button>
+        <button class="' . esc_attr($atts['classtext']) . ' copy-btn" data-clipboard-text="' . esc_attr($atts['content']) . '">' . esc_html($atts['buttontext']) . '</button>
+        <span class="copas-success-message" style="display:none;">' . esc_html($atts['successmessage']) . '</span>
     ';
 }
 

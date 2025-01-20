@@ -1,13 +1,13 @@
 
-=== Copas Plugin ===
-Contributors: Abduns
+=== Copas ===
+Contributors: abduns
 Tags: clipboard, copy, classic editor
-Requires at least: 4.7
-Tested up to: 5.4
+Requires at least: 5.4
+Tested up to: 6.7.1
 Stable tag: 1.0
 Requires PHP: 7.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: GPL-3.0
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 A WordPress plugin that adds a customizable "Copy to Clipboard" button integrated with the Classic Editor.
 
