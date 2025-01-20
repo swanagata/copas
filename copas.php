@@ -57,8 +57,7 @@ function add_copas_button($atts) {
     );
 
     return '
-        <button class="' . esc_attr($atts['classtext']) . ' copy-btn" data-clipboard-text="' . esc_attr($atts['content']) . '">' . esc_html($atts['buttontext']) . '</button>
-        <span class="copas-success-message" style="display:none;">' . esc_html($atts['successmessage']) . '</span>
+        <button class="' . esc_attr($atts['classtext']) . ' copy-btn" data-clipboard-text="' . esc_attr($atts['content']) . '" data-success-message="' . esc_attr($atts['successmessage']) . '">' . esc_html($atts['buttontext']) . '</button>
     ';
 }
 
