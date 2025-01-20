@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 setTimeout(() => {
                     button.innerText = originalText;
-                }, 1000);
+                }, 1000); // Change back to the original button text after 1 second
             }).catch(err => {
                 console.error('Failed to copy:', err);
             });
