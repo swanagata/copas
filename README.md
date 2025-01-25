@@ -8,6 +8,7 @@ Stable tag: 1.0
 Requires PHP: 7.0
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Github: https://github.com/swanagata/copas
 
 A WordPress plugin that adds a customizable "Copy to Clipboard" button integrated with the Classic Editor.
 
