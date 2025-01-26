@@ -4,7 +4,7 @@
  * Description: This plugin adds a customizable "Copy to Clipboard" button using the Classic Editor.
  * Version: 1.0
  * Author: Abdun Syakuur
- * Author URI: https://abduns.com
+ * Author URI: https://swanagata.com
  * License: GPL-3.0
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * GitHub Plugin URI: https://github.com/swanagata/copas
